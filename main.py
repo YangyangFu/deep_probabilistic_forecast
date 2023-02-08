@@ -38,7 +38,12 @@ def run(args):
     train_loader, test_loader = torch_loader(X_train, y_train, X_test, y_test, args.historical_sequence_length, args.batch_size, sequential)
     input_dim = X_train.shape[-1] if sequential else X_train.shape[-1] * args.historical_sequence_length
     output_dim = y_train.shape[-1]
-
+    x, y = next(iter(train_loader))
+    print(X_train.shape)
+    print(type(X_train))
+    print(x.shape)
+    print(y.shape)
+    print(sss)
     model = model_class(input_dim, output_dim, args)
     Nbatches = X_train.shape[0]/args.batch_size
 

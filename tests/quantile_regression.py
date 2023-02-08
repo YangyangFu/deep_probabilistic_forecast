@@ -424,9 +424,9 @@ if __name__ == '__main__':
 
 
     fig2.tight_layout()
-    # fig2.savefig('../results/'+ save_name + '.pdf', bbox_inches='tight')
+    fig2.savefig(save_name + '.pdf', bbox_inches='tight')
     fig.tight_layout()
-    # fig.savefig('../results/appendix/'+ save_name + '.pdf', bbox_inches='tight')
+    fig.savefig('./appendix/'+ save_name + '.pdf', bbox_inches='tight')
 
 
     save_name = 'gradient_boosting'
@@ -501,6 +501,6 @@ if __name__ == '__main__':
 
 
     fig2.tight_layout()
-    # fig2.savefig('../results/'+ save_name + '.pdf', bbox_inches='tight')
+    fig2.savefig(save_name + '.pdf', bbox_inches='tight')
     fig.tight_layout()
-    # fig.savefig('../results/appendix/'+ save_name + '.pdf', bbox_inches='tight')
+    fig.savefig('./appendix/'+ save_name + '.pdf', bbox_inches='tight')
